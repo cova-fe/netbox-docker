@@ -243,3 +243,7 @@ TIME_FORMAT = environ.get('TIME_FORMAT', 'g:i a')
 SHORT_TIME_FORMAT = environ.get('SHORT_TIME_FORMAT', 'H:i:s')
 DATETIME_FORMAT = environ.get('DATETIME_FORMAT', 'N j, Y g:i a')
 SHORT_DATETIME_FORMAT = environ.get('SHORT_DATETIME_FORMAT', 'Y-m-d H:i')
+
+# GCP IAP JWT Tokens
+IAP_JWT_AUTH = environ.get('IAP_JWT_AUTH', 'False').lower() == 'true'
+IAP_JWT_AUDIENCE = environ.get('IAP_JWT_AUDIENCE', '')
